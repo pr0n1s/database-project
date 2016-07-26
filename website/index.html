@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <head>
+    <title>pr0n1s</title>
+    <meta charset="UTF-8">
+    <!--css file-->
+    <link href="css/pr0n1s.css" rel="stylesheet">
+    <!--JavaScript file for Google Maps-->
+    <script src="scripts/map.js"></script>
+    <!--Javascript file for Ajax request to PHP file-->
+    <script src="scripts/database.js"></script>
+  </head>
+  <body>
+    <div class="container"> 
+      <div class="header">
+        <h1><i><b>pr0n1s</b></i></h1>
+      </div>
+      <!--Form for selecting a query, value is sent to PHP file-->
+      <div class="form">
+        <form>
+          <select name="users" onchange="query(this.value)"><br><br>
+            <option value="">Select A Query:</option>
+            <option value="1">Top Successful Logins</option>
+            <option value="2">Top Failed Logins</option>
+            <option value="3">Script Kiddies</option>
+            <option value="4">Top Countries</option>
+            <option value="5">Top Successful Logins by Ip</option>
+            <option value="6">Top Failed Login Attempts by Ip</option>
+            <option value="7">Top Successful Logins by User</option>
+            <option value="8">Top Failed Login Attempts by User</option>
+          </select>
+        </form>
+      </div>
+      <!--Form for inputing Latitude and Longitude-->
+      <div class="mapform">
+        <form id="latLngForm">
+          <input type="text" id="lat" placeholder="Latitude" />
+          <input type="text" id="lng" placeholder="Longitude" />
+          <input type="submit" value="Submit"/>
+        </form>
+      </div>
+      <!--Div where the table will be displayed-->
+      <div id="query" class="query"></div>
+      <!--Div where the map will be displayed-->
+      <div id="map" class="map">
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+      </div>
+      <div class="footer">Copyright © pr0n1s@blahbityblah</div> </div>
+  </body>
+</html>
