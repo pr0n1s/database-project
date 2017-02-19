@@ -1,6 +1,10 @@
 Author: pr0n1s (Robert Edstrom)
 Project: SSH/Auth Log Analysis
 
+Update:
+  Porting this over to Dockers: Nginx, PHP, Python, & MySQL...
+  Additionally, the parsing api will be refactored to accept generic ssh logs.
+
 Dependencies:
   
   auth.log's:
