@@ -91,6 +91,4 @@ Run the BASH script: ./run.sh
 
 Note: The, back-end, Python scripts are not dependent on where the root directory
       of the project is stored on your local machine. However, the website 
-      directory contents are. Please, follow the Apache2 depency steps above. 
-      If by any means you can't get the website to work with Apache2 please feel 
-      free to contact me @ redstrom83@gmail.com.
+      directory contents are. Please, follow the Apache2 depency steps above.
